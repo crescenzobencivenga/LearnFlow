@@ -1,0 +1,46 @@
+﻿{
+  "esercizi": [
+    {
+      "esercizio1": [
+        {
+          "id": 1
+        },
+        {
+          "testo": "Cos'è un algoritmo"
+        },
+        {
+          "risposte": [
+            "E' sinonimo di programma",
+            "Designa una procedura che esegue una sequenza finita di operazioni",
+            "Designa una procedura che non termina necessariamente",
+            "Indica una forma di calcolo"
+          ]
+        },
+        {
+          "corretta": 2
+        }
+      ]
+    },
+    {
+      "esercizio2": [
+        {
+          "id": 1
+        },
+        {
+          "testo": "Cos'è un algoritmo"
+        },
+        {
+          "risposte": [
+            "E' sinonimo di programma",
+            "Designa una procedura che esegue una sequenza finita di operazioni",
+            "Designa una procedura che non termina necessariamente",
+            "Indica una forma di calcolo"
+          ]
+        },
+        {
+          "corretta": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <!-- miei -->
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <script src="JS/JavaScript.js"></script>
+    <!-- miei progress lvl -->
+    <link href="CSS/css_progress_level.css" rel="stylesheet">
+    <script src="JS/js_progess_level.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="progress-container fixed-top" style="width: 100%">
+    <div class="progress-bar progress-bar-striped progress"
+         role="progressbar"
+         style="width: 50%; height: 2vh;"
+         aria-valuenow="50"
+         aria-valuemin="0"
+         aria-valuemax="100">
+        50%
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light" style="top:2vh">
+
+        <div class="container-fluid row-cols-2">
+
+            <div class=" navbar-brand col-1 d-xs-none">
+                <img src="img/logoLF-t.png" width="180" height="49" alt="">
+            </div>
+
+
+            <div class="col-10">
+
+                <!--per i contenuti dentro il nav, ma all'esterno del collapse
+                <ul>
+                    <li> elemento nav 1</li>
+                    <li> elemento nav 2</li>
+                </ul>
+                -->
+
+                <ul class="nav container-fluid justify-content-end my-auto">
+
+<!--                    <li class="nav-item my-auto">&lt;!&ndash; livello &ndash;&gt;-->
+<!--                        <div class="input-group-append mx-auto my-auto">-->
+<!--                            <div class="lvl-overlap">-->
+<!--                                <img src="img/starlvl.png" class="img-overlap" width="54" height="54">-->
+<!--                                <span class=" h2 txt-overlap">LVL</span>-->
+<!--                            </div>-->
+<!--                            <h2 class="my-auto">:</h2>-->
+<!--                            <h4 class="my-auto">principiante</h4>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+                    <li><!-- spazio nu vre!! -->
+                        <div class="mr-3 d-md-none"></div>
+                    </li>
+
+                    <li><!-- menu collapse -->
+                        <div class="text-center">
+                            <!-- bottone per collapse degli elementi -->
+                            <button class="navbar-toggler dropdown my-2"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#menuu">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse text-right" id="menuu">
+                                <ul class="navbar-nav mx-auto">
+
+                                    <li class="nav-item my-auto"><!-- livello -->
+                                        <div class="input-group-append mx-auto my-auto">
+                                            <div class="lvl-overlap">
+                                                <img src="img/starlvl.png" class="img-overlap" width="54" height="54" alt="">
+                                                <span class=" h2 txt-overlap">LVL</span>
+                                            </div>
+                                            <h2 class="my-auto">:</h2>
+                                            <h4 class="my-auto">principiante</h4>
+                                        </div>
+                                    </li>
+
+                                    <li> <!-- button bedje time -->
+                                        <div class="navbar-item">
+                                            <div class="input-group-append ml-2">
+                                                <img src="img/chronometer-64.png" width="52" height="52" alt="">
+                                                <span class="m-auto h3"> 0 </span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li> <!-- button bedje 50 -->
+                                        <div class="navbar-item">
+                                            <div class="input-group-append ml-2">
+                                                <img src="img/speed-limit-64.png" width="52" height="52" alt="">
+                                                <span class="m-auto h3"> 0 </span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li><!-- button select lenguage -->
+                                        <div class="navbar-item dropdown">
+                                            <!-- bottone per collapse degli elementi -->
+                                            <button class="btn btn-secondary dropdown-toggle my-2 ml-2"
+                                                    type="button"
+                                                    data-target="dropdownMenuButton1"
+                                                    data-toggle="dropdown">
+                                                    Seleziona lingua
+                                            </button>
+
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <button id="lang_it" type="button" class="dropdown-item active" onclick="lang_change('it')">Italiano</button>
+                                                </li>
+                                                <li>
+                                                    <button id="lang_en" type="button" class="dropdown-item" onclick="lang_change('en')">Inglese</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<br>
+
+
+<!-- contenuto -->
+    <div class="container">
+
+        <div class="row justify-content-center my-2">
+            <h1> Amplia la tua conoscenza, Completa i livelli e impara </h1>
+        </div>
+
+        <div class="row justify-content-center border rounded p-2 ombra">
+
+            <div class="col-md-3 col-sm-6">
+                <canvas class="canvas-pb" id="pb_1" percentage="50">
+                </canvas>
+                <span class="content-into-canvas-pb" onclick="start_Argument(1)">
+                    <img class="img-fluid" onmouseover="updateProgress(100,'pb_1')" src="./img/levels/level1.png" alt="">
+                </span>
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+                <canvas class="canvas-pb" id="pb_2" percentage="50">
+                </canvas>
+                <span class="content-into-canvas-pb" onclick="start_Argument(2)">
+                    <img class="img-fluid" onmouseover="updateProgress(80,'pb_2')" src="./img/levels/level2.png" alt="">
+                </span>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <canvas class="canvas-pb" id="pb_3" percentage="50">
+                </canvas>
+                <span class="content-into-canvas-pb" onclick="start_Argument(3)">
+                    <img class="img-fluid" onmouseover="updateProgress(50,'pb_3')" src="./img/levels/level3.png" alt="">
+                </span>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <canvas class="canvas-pb" id="pb_4" percentage="50">
+                </canvas>
+                <span class="content-into-canvas-pb" onclick="start_Argument(4)">
+                    <img class="img-fluid" onmouseover="updateProgress(40,'pb_4')" onclick="" src="./img/levels/level4.png" alt="">
+                </span>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <canvas class="canvas-pb" id="pb_5" percentage="50">
+                </canvas>
+                <span class="content-into-canvas-pb" onclick="start_Argument(5)">
+                    <img class="img-fluid" onmouseover="updateProgress(30,'pb_5')" src="./img/levels/level5.png" alt="">
+                </span>
+            </div>
+
+        </div>
+
+
+<br>
+
+
+<!--        <div class="row justify-content-center border roundend p-2 ombra">-->
+
+<!--            <div class="col-md-3 col-sm-6 ">-->
+<!--                <canvas class="canvas-pb ombra" id="pb_11" percentage="50">-->
+<!--                </canvas>-->
+<!--                <span class="content-into-canvas-pb">-->
+<!--                    <img class="img-fluid" onclick="updateProgress(100,'pb_11')" src="./img/levels/level1.png" alt="">-->
+<!--                </span>-->
+<!--            </div>-->
+
+
+<!--            <div class="col-md-3 col-sm-6 ">-->
+<!--                <canvas class="canvas-pb ombra" id="pb_22" percentage="50">-->
+<!--                </canvas>-->
+<!--                <span class="content-into-canvas-pb" >-->
+<!--                    <img class="img-fluid" onclick="updateProgress(80,'pb_22')" src="./img/levels/level2.png" alt="">-->
+<!--                </span>-->
+<!--            </div>-->
+
+<!--            <div class="col-md-3 col-sm-6">-->
+<!--                <canvas class="canvas-pb" id="pb_33" percentage="50">-->
+<!--                </canvas>-->
+<!--                <span class="content-into-canvas-pb" >-->
+<!--                    <img class="img-fluid" onclick="updateProgress(50,'pb_33')" src="./img/levels/level3.png" alt="">-->
+<!--                </span>-->
+<!--            </div>-->
+
+<!--            <div class="col-md-3 col-sm-6">-->
+<!--                <canvas class="canvas-pb" id="pb_44" percentage="50">-->
+<!--                </canvas>-->
+<!--                <span class="content-into-canvas-pb" >-->
+<!--                    <img class="img-fluid" onclick="updateProgress(40,'pb_44')" src="./img/levels/level4.png" alt="">-->
+<!--                </span>-->
+<!--            </div>-->
+
+<!--            <div class="col-md-3 col-sm-6">-->
+<!--                <canvas class="canvas-pb" id="pb_55" percentage="50">-->
+<!--                </canvas>-->
+<!--                <span class="content-into-canvas-pb" >-->
+<!--                    <img class="img-fluid" onclick="updateProgress(30,'pb_55')" src="./img/levels/level5.png" alt="" >-->
+<!--                </span>-->
+<!--            </div>-->
+
+<!--        </div>-->
+
+    </div>
+
+</body>
+</html>

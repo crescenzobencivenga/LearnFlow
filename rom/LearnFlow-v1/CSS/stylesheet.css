@@ -1,0 +1,95 @@
+/* applica questo settaggio se il display è <= 1200px*/
+@media screen and (max-width: 1200px){
+    #main-img{
+        width: 256px;
+        height: 256px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #Snd_img{
+        width: 256px;
+        height: 256px;
+    }
+}
+
+#login_cont, #regs_cont{
+    background-color: #f8f9fa;
+    padding: 3%;
+    border-radius: 3%;
+}
+
+#login_form, #regs_form{
+    background-color: #e6e9ed;
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.allinea_md, .allinea_md2 {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container holding the image and the text */
+.lvl-overlap {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.txt-overlap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: royalblue;
+    text-shadow: 1px 1px 4px white;
+}
+
+
+.progress-container {
+    width: 100%;
+    background-color: transparent;
+    height: 2px;
+    display: block;
+}
+
+.ombra{
+    box-shadow: 2px 2px 11px grey;
+}
+
+.btn-quiz{
+    white-space: initial;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
