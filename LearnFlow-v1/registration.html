@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <!-- miei -->
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <script src="JS/JavaScript.js" language="JavaScript"></script>
+
+</head>
+
+<body class="allinea_md2">
+
+<div class="container-fluid rounded my-3" id="regs_div">
+    <div class="row justify-content-center" id="regs_cont">
+
+        <div class="col-md-7 col-lg-6 col-sm-10 col-xs-10 col-xl-5">
+
+            <div class=" text-center my-3">
+                    <span class="h1">
+                        Registrati a LearnFlow
+                    </span>
+            </div>
+
+            <div class="text-center p-4 row justify-content-center" id="regs_form">
+
+                <form>
+                    <!-- nick -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="form_mail" class="form-label">Scegli un nickname</label>
+                        </div>
+                        <div class="input-group-append col-12">
+                            <span> </span>
+                            <input type="email" class="form-control" id="form_mail" placeholder="nickname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span></span>
+                    </div>
+
+                    <!-- nome e cognome -->
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label for="form_cognome" class="form-label" >Inserire nome</label>
+                            <div class="input-group-append">
+                                <span></span>
+                                <input type="password" class="form-control input-pas" id="form_nome" placeholder="nome">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="form_nome" class="form-label" >Inserire cognome</label>
+                            <div class="input-group-append">
+                                <span></span>
+                                <input type="password" class="form-control input-pas" id="form_cognome" placeholder="cognome">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- eta e mail -->
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label for="form_cognome" class="form-label" >Inserire data nascita</label>
+                            <div class="input-group-append">
+                                <span></span>
+                                <div class="input-group-append">
+                                    <span></span>
+                                    <input type="text" class="form-control input-pas" id="form-brdy" placeholder="gg/mm/aaaa">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="form_nome" class="form-label" >Inserire email</label>
+                            <div class="input-group-append">
+                                <span></span>
+                                <input type="password" class="form-control input-pas" id="form_email" placeholder="email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pass e conf -->
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label for="form_cognome" class="form-label" >Inserire password</label>
+                            <div class="input-group-append">
+                                <span> </span>
+                                <input type="password" class="form-control input-pas" id="form_pass" placeholder="password">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="form_nome" class="form-label" >Conferma password</label>
+                            <div class="input-group-append">
+                                <span></span>
+                                <input type="password" class="form-control input-pas" id="form_cp" placeholder="confermare password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center links">
+                       <button type="button" class="btn btn-success btn-block" onclick="inizia_login()">
+                           Registrati ora
+                       </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

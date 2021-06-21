@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <!-- miei -->
+    <link href="../../CSS/stylesheet.css" rel="stylesheet">
+    <script src="../../JS/JavaScript.js" language="JavaScript"></script>
+    <!-- miei progress lvl -->
+    <link href="../../CSS/css_progress_level.css" rel="stylesheet">
+    <script src="../../JS/js_progess_level.js" language="JavaScript"></script>
+
+
+</head>
+
+<body>
+
+<div class="progress-container fixed-top" style="width: 100%">
+    <div class="progress-bar progress-bar-striped progress"
+         role="progressbar"
+         style="width: 50%; height: 2vh;"
+         aria-valuenow="50"
+         aria-valuemin="0"
+         aria-valuemax="100">
+        50%
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" style="top:2vh">
+
+    <div class="container-fluid row-cols-2">
+
+        <div class=" navbar-brand col-1 d-xs-none" href="#">
+            <img src="../../img/logoLF-t.png" width="180" height="49" alt="">
+        </div>
+
+
+        <div class="col-10">
+
+            <!--per i contenuti dentro il nav, ma all'esterno del collapse
+            <ul>
+                <li> elemento nav 1</li>
+                <li> elemento nav 2</li>
+            </ul>
+            -->
+
+            <ul class="nav container-fluid justify-content-end my-auto">
+
+                <li><!-- spazio nu vre!! -->
+                    <div class="mr-3 d-md-none"></div>
+                </li>
+
+                <li><!-- menu collapse -->
+                    <div class="text-center">
+                        <!-- bottone per collapse degli elementi -->
+                        <button class="navbar-toggler dropdown my-2"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#menuu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse text-right" id="menuu">
+                            <ul class="navbar-nav mx-auto">
+
+                                <li class="nav-item my-auto"><!-- livello -->
+                                    <div class="input-group-append mx-auto my-auto">
+                                        <div class="lvl-overlap">
+                                            <img src="../../img/starlvl.png" class="img-overlap" width="54" height="54">
+                                            <span class=" h2 txt-overlap">LVL</span>
+                                        </div>
+                                        <h2 class="my-auto">:</h2>
+                                        <h4 class="my-auto">principiante</h4>
+                                    </div>
+                                </li>
+
+                                <li> <!-- button bedje time -->
+                                    <div class="navbar-item">
+                                        <div class="input-group-append ml-2">
+                                            <img src="../../img/chronometer-64.png" width="52" height="52">
+                                            <span class="m-auto h3"> 0 </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li> <!-- button bedje 50 -->
+                                    <div class="navbar-item">
+                                        <div class="input-group-append ml-2">
+                                            <img src="../../img/speed-limit-64.png" width="52" height="52">
+                                            <span class="m-auto h3"> 0 </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li><!-- button select lenguage -->
+                                    <div class="navbar-item dropdown">
+                                        <!-- bottone per collapse degli elementi -->
+                                        <button class="btn btn-secondary dropdown-toggle my-2 ml-2"
+                                                type="button"
+                                                data-target="dropdownMenuButton1"
+                                                data-toggle="dropdown">
+                                            Seleziona lingua
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <button id="lang_it" type="button" class="dropdown-item active" onclick="lang_change('it')">Italiano</button>
+                                            </li>
+                                            <li>
+                                                <button id="lang_en" type="button" class="dropdown-item" onclick="lang_change('en')">Inglese</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+
+<!-- contenuto -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 justify-content-center my-2 text-center">
+
+            <h1>
+                Esercizio 1
+            </h1>
+
+            <h5>
+                Seleziona la risposta esatta
+            </h5>
+
+            <h4>
+                Quale definizione è più appropriata per un algoritmo?
+            </h4>
+        </div>
+    </div>
+
+    <div class="row justify-content-center my-2 text-center">
+
+        <div class="btn-group btn-group-toggle btn-group-vertical col-12" data-toggle="buttons">
+
+            <button class="btn btn-outline-success my-2 p-auto rounded btn-quiz">
+                <input type="radio" name="options" id="option1" autocomplete="off">
+                <h5 class="my-auto">E' sinonimo di programma</h5>
+            </button>
+
+            <button class="btn btn-outline-success my-2 rounded btn-quiz">
+                <input type="radio" name="options" id="option2" autocomplete="off" class="">
+                <h5 class="my-auto">Designa una procedura che esegue una sequenza finita di operazioni</h5>
+            </button>
+
+            <button class="btn btn-outline-success my-2 rounded btn-quiz">
+                <input type="radio" name="options" id="option3" autocomplete="off">
+                  <h5 class="my-auto">  Designa una procedura che non termina necessariamente </h5>
+            </button>
+
+            <button class="btn btn-outline-success my-2 rounded btn-quiz">
+                <input type="radio" name="options" id="option4" autocomplete="off">
+                <h5 class="my-auto">  Indica una forma di calcolo </h5>
+            </button>
+
+        </div>
+
+        <div class="row justify-content-center">
+            <button class="btn btn-outline-primary my-4" data-toggle="button">
+                <h5 class="my-auto"> Conferma </h5>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="row p-2 justify-content-around">
+
+        <div class="col-4 m-2 ombra text-center container-fluid rounded">
+            <h4> <- Back </h4>
+        </div>
+
+        <div class="col-4 m-2 ombra text-center container-fluid rounded ">
+            <h4> Next -> </h4>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
