@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="CSS/transalte_btn.css" rel="stylesheet">
+
+
+    <!-- miei -->
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <script src="JS/JavaScript.js"></script>
+    <!-- miei progress lvl -->
+    <script src="JS/cookie_handler.js" ></script>
+    <script src="JS/status_player.js"></script>
+    <script src="JS/MainGame_connection.js"></script>
+
+
+
+</head>
+
+<body onload="assign_page()">
+
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+        <div class="container-fluid">
+
+            <div class="justify-content-start">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logoLF-t.png" width="180" height="49" alt="">
+                </a>
+            </div>
+
+            <div class="nav-item mt-3">
+                <div id="google_translate_element">
+                    <!--BUTTON FOR TRANSLATION-->
+                </div>
+            </div>
+
+            <div class="d-block d-lg-none">
+                <button class="navbar-toggler dropdown"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#infox">
+                    <i class="fas fa-user"></i>
+                </button>
+
+                <div class="collapse navbar-collapse text-right" id="infox">
+                    <ul class="navbar-nav ml-auto my-auto">
+
+                        <li class="nav-item my-auto ml-4">
+                            <div class="my-auto m-auto">
+                                <h1 id="put_username" class="nav-link" style="color: #049dff;" translate="no"> </h1>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr>
+                        </li>
+
+                        <li class="nav-item my-auto ml-4 ">
+                            <div class=" row justify-content-center input-group-append mb-2">
+                                <h4 class="my-auto mr-2">Score </h4>
+                                <h2 class="my-auto" id="put_pnt2" style="color: #049dff;"></h2>
+                            </div>
+                        </li>
+
+                        <li class="nav-item my-auto ml-4">
+                            <div class="">
+                                <button type="button" class="btn btn-success btn-danger" onclick="exit_user()">
+                                    Click to exit
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<br>
+
+
+<!-- div a scomparsa usare classi .d-none .d-lg-block .d-xl-none -->
+
+    <div class="content">
+
+        <div class="row justify-content-around" id="content_main">
+
+        <!--space - decommentare se si aggiunge le info user a dx -->
+            <div class="col-lg-1 col-xl-1 d-none d-lg-block">
+            </div>
+
+        <!-- livelli -->
+            <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 col-xs-12 border rounded p-2 my-2 ombra">
+
+                <div class="row justify-content-center text-center mx-auto mb-4">
+                    <h1 class="text-center"> Expand your knowledge, Complete the levels and learn </h1>
+                </div>
+
+<!-- START LEVELS DECLARATION -->
+                <div class="row justify-content-center mx-auto mb-2">
+<!-- UNTIL NOW -->
+                    <div class="due col-12 row justify-content-around m-2">
+
+                        <div class="col-6"
+                             data-livello="1"
+                             data-toggle="collapse"
+                             data-target="#lvl1"
+                             onclick="alternatecollapse('#lvl1','#lvl2')">
+                                <div class=" lvl-overlap" >
+                                    <img src="./img/new_levels/circular-chart%20(1).png"  class="img-overlap"  alt="">
+                                    <span class=" h2 txt-overlap" style="color: black"> 1 </span>
+                                </div>
+                        </div>
+
+                        <div class="col-6"
+                             data-livello="2"
+                             data-toggle="collapse"
+                             data-target="#lvl2"
+                             onclick="alternatecollapse('#lvl2','#lvl1')">
+                                <div class=" lvl-overlap" >
+                                    <img src="./img/new_levels/circular-chart%20(2).png"  class="img-overlap"  alt="">
+                                    <span class=" h2 txt-overlap" style="color: black"> 2 </span>
+                                </div>
+                        </div>
+
+                    </div>
+
+<!--collapse livelli 1&2 -->
+                    <div id="lvl1" class="col-12 collapse ">
+                        <div class=" card card-body">
+                            <div class="row justify-content-around">
+                                <button class=" col-4 btn btn-primary" type="button" onclick="start_Theory('LVL1','1')">
+                                    Theory level 1
+                                </button>
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Exercises level 1
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="lvl2" class="col-12 collapse ">
+                        <div class=" card card-body">
+                            <div class="row justify-content-around">
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Theory level 2
+                                </button>
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Exercises level 2
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+<!-- fine collapse livelli 1&2 -->
+
+                    <div class="uno col-12 row justify-content-center m-2" >
+                        <div class="col-12"
+                             data-livello="3"
+                             data-toggle="collapse"
+                             data-target="#lvl3">
+                            <div class=" lvl-overlap" >
+                                <img src="./img/new_levels/circular-chart%20(3).png"  class="img-overlap"  alt="">
+                                <span class=" h2 txt-overlap" style="color: black"> 3 </span>
+                            </div>
+                        </div>
+                    </div>
+
+<!--collapse livello 3 -->
+                    <div id="lvl3" class="col-12 collapse ">
+                        <div class=" card card-body">
+                            <div class="row justify-content-around">
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Theory level 3
+                                </button>
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Exercises level 3
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+ <!-- fine collapse livello 3 -->
+
+
+                    <div class="due col-12 row justify-content-around m-2" >
+
+                        <div class="col-6"
+                             data-livello="4"
+                             data-toggle="collapse"
+                             data-target="#lvl4"
+                             onclick="alternatecollapse('#lvl4','#lvl5')">
+                            <div class=" lvl-overlap" >
+                                <img src="./img/new_levels/circular-chart%20(4).png"  class="img-overlap"  alt="">
+                                <span class=" h2 txt-overlap" style="color: black"> 4 </span>
+                            </div>
+                        </div>
+
+                        <div class="col-6"
+                             data-livello="5"
+                             data-toggle="collapse"
+                             data-target="#lvl5"
+                             onclick="alternatecollapse('#lvl5','#lvl4')">
+                            <div class=" lvl-overlap" >
+                                <img src="./img/new_levels/circular-chart%20(5).png"  class="img-overlap"  alt="">
+                                <span class=" h2 txt-overlap" style="color: black"> 5 </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+<!--collapse livelli 4&5 -->
+                    <div id="lvl4" class="col-12 collapse ">
+                        <div class=" card card-body">
+                            <div class="row justify-content-around">
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Theory level 4
+                                </button>
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Exercises level 4
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="lvl5" class="col-12 collapse ">
+                        <div class=" card card-body">
+                            <div class="row justify-content-around">
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Theory level 5
+                                </button>
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Exercises level 5
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+ <!-- fine collapse livelli 4&5 -->
+
+                    <div class="uno row justify-content-center m-2">
+                        <div class="col-12"
+                             data-livello="6"
+                             data-toggle="collapse"
+                             data-target="#lvl6">
+                            <div class=" lvl-overlap" >
+                                <img src="./img/new_levels/circular-chart%20(0).png"  class="img-overlap"  alt="">
+                                <span class=" h2 txt-overlap" style="color: black"> 6 </span>
+                            </div>
+                        </div>
+                    </div>
+
+<!--collapse livello 3 -->
+                    <div id="lvl6" class="col-12 collapse ">
+                        <div class=" card card-body">
+                            <div class="row justify-content-around">
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Theory level 6
+                                </button>
+                                <button class=" col-4 btn btn-primary" type="button">
+                                    Exercises level 6
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+<!-- fine collapse livello 3 -->
+
+                </div>
+<!-- END LEVELS DECLARATION -->
+
+            </div>
+
+
+<!-- INFO UTENTE -->
+            <div class="col-lg-3 col-xl-3 d-none d-lg-block my-2 ">
+
+                <div class=" container justify-content-center border rounded p-2 ombra">
+
+                        <div class="row justify-content-center ">
+                            <h1 id="put_username2" style="color: #049dff;" translate="no"> --- </h1>
+                        </div>
+
+                        <hr>
+
+                        <div class=" row justify-content-center input-group-append my-2">
+                            <div class="lvl-overlap mr-2">
+                                <img src="img/starlvl.png" class="img-overlap" width="54" height="54" alt="">
+                                <span class=" h2 txt-overlap">LVL</span>
+                            </div>
+                            <h4 class="my-auto" id="put_lvl"></h4>
+                        </div>
+
+                        <div class=" row justify-content-center input-group-append my-2">
+                            <h4 class="my-auto mr-2">Score </h4>
+                            <h2 class="my-auto" id="put_pnt" style="color: #049dff;"></h2>
+                        </div>
+
+                        <div class="row justify-content-center my-2 mt-3">
+                            <button type="button" class="btn btn-success btn-danger" onclick="exit_user()">
+                                Click to exit
+                            </button>
+                        </div>
+                </div>
+
+
+
+<!-- CLASSIFICA -->
+                <div class=" container justify-content-center border rounded p-2 ombra mt-4">
+
+                    <div class="row justify-content-center">
+
+                        <div class="row justify-content-center ">
+                            <h1> Ranking </h1>
+                        </div>
+
+                        <div class="container justify-content-center">
+                            <div class="row justify-content-center">
+                                <div class="col-8 container">
+                                    <div class="row justify-content-center">Username</div> <hr>
+                                    <div id ="put_top_usr">
+<!--                                        insert here the top usr -->
+                                    </div>
+                                </div>
+
+                                <div class="col-4 container">
+                                    <div class="row justify-content-center">Score</div><hr>
+                                    <div id="put_top_pnt">
+<!--                                      insert here the top pnt  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+<!---->
+
+
+
+
+            </div>
+<!---->
+
+
+
+
+
+
+        </div>
+
+    </div>
+<br>
+
+</body>
+</html>

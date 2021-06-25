@@ -1,0 +1,8 @@
+USATO PER IL COLLEGAMENTO CON LA WEB APP LEARN FLOW
+
+
+pip install dnspython
+            brypt
+            flask
+            flask-cors
+            pymongo

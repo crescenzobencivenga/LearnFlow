@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <!-- miei -->
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <script src="JS/JavaScript.js"></script>
+    <script src="JS/cookie_handler.js" ></script>
+    <script src="JS/registration_connection.js" ></script>
+
+
+</head>
+
+<body class="allinea_md2">
+
+<div class="container-fluid rounded my-3" id="regs_div">
+    <div class="row justify-content-center" id="regs_cont">
+
+        <div class="col-md-7 col-lg-6 col-sm-10 col-xs-10 col-xl-5">
+
+            <div class=" text-center my-3">
+                    <span class="h1">
+                        Registrati a LearnFlow
+                    </span>
+            </div>
+
+            <div class="text-center p-4 row justify-content-center" id="regs_form">
+
+                    <span id="message4usr" style="color: red"> </span>
+
+                    <form class=" col-12" id="form_id">
+
+                        <div class="mb-3">
+                            <label for="form_user" class="form-label">Inserire username</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="email" class="form-control" id="form_user" placeholder="username">
+                            </div>
+                            <span id = "message0" style="color:red"> </span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="form_mail" class="form-label">Inserire email</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                <input type="email" class="form-control" id="form_mail" placeholder="email">
+                            </div>
+                            <span id = "message1" style="color:red"> </span>
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="form_pass" class="form-label" >Inserire password</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <input type="password" class="form-control input-pas" id="form_pass" placeholder="password">
+                            </div>
+                            <span id = "message2" style="color:red"> </span>
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="form_pass_conf" class="form-label" >Conferma password</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-check"></i></span>
+                                <input type="password" class="form-control input-pas" id="form_pass_conf" placeholder="password">
+                            </div>
+                            <span id = "message3" style="color:red"> </span>
+                        </div>
+
+                        <div class="d-flex justify-content-center links">
+                            <button type="button" class="btn btn-success btn-block" onclick="validate_register()">
+                                Registrati ora
+                            </button>
+                        </div>
+
+                    </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

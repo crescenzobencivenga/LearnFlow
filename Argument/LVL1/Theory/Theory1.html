@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="../../../CSS/transalte_btn.css" rel="stylesheet">
+
+
+    <!-- miei -->
+    <link href="../../../CSS/stylesheet.css" rel="stylesheet">
+    <script src="../../../JS/JavaScript.js"></script>
+    <!-- miei progress lvl -->
+    <script src="../../../JS/cookie_handler.js" ></script>
+    <script src="../../../JS/status_player.js"></script>
+    <script src="../../../JS/MainGame_connection.js"></script>
+    <script src="../../../JS/level_connection.js"></script>
+
+
+</head>
+
+<body onload="assign_page_2()">
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
+
+        <div class="container-fluid">
+
+            <div class="justify-content-start">
+                <a class="navbar-brand" href="#">
+                    <img src="../../../img/logoLF-t.png" width="180" height="49" alt="">
+                </a>
+            </div>
+
+            <div class="nav-item mt-3">
+                <div id="google_translate_element">
+                    <!--BUTTON FOR TRANSLATION-->
+                </div>
+            </div>
+
+            <div class="">
+                <button class="navbar-toggler dropdown"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#infox">
+                    <i class="fas fa-user"></i>
+                </button>
+
+                <div class="collapse navbar-collapse text-right" id="infox">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item ml-4">
+                            <div class="m-auto">
+                                <h1 id="put_username" class="" style="color: #049dff;" translate="no"> </h1>
+                            </div>
+                        </li>
+
+                        <li class="nav-item my-auto ml-4">
+                            <div class="input-group-append">
+                                <h4 class="my-auto mr-2">Score </h4>
+                                <h2 class="my-auto mr-3" id="put_pnt2" style="color: #049dff;"> - </h2>
+                            </div>
+                        </li>
+
+                        <li class="nav-item my-auto ml-4">
+                            <div class="">
+                                <button type="button" class="btn btn-success btn-danger" onclick="exit_user_2()">
+                                    Click to exit
+                                </button>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <br>
+
+        <hr>
+            <nav id="navarg" class="navbar navbar-light bg-light navbar-expand-sm px-3 justify-content-center sticky-top">
+                <a class="navbar-brand mr-2">Arguments:</a>
+
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link  text-right" href="#a1">Algorithm properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-right" href="#a2">Introduction to algorithms</a>
+                        </li>
+                    </ul>
+            </nav>
+        <hr>
+
+    <div class="container">
+        <div id="a1" class="my-2">
+            <h4 class="title text-center display-6">Algorithm properties</h4>
+            <p>
+                Before going into the specifics of the flowchart rules it is good to define the essential characteristics that each algorithm should have.
+                An algorithm to be defined as such must have 6 essential characteristics:
+                <br> 1) Finiteness: each algorithm must be finite or better it must have a limited sequence of instructions;
+                <br> 2) Executable: each instruction must be executed according to the characteristics of the performer. Or rather, any algorithm we are going to realize must be able to be run on any computer. The computer must be able to interpret and execute instructions;
+                <br> 3) Unambiguous: each instruction must be interpreted univocally by the executor. The algorithm cannot be subjective but objective;
+                <br> 4) General: it must be valid for a class of problems;
+                <br> 5) Deterministic: starting from the same initial data it must always obtain the same result regardless of the performer;
+                <br> 6) Complete: I have to cover all the cases that can occur during the execution.
+            </p>
+        </div>
+
+        <div id="a2" class="my-2">
+            <h4 class="title text-center display-6">Introduction to algorithms</h4>
+            <p>
+                An algorithm is nothing more than a simple procedure that allows the
+                solving a class of problems by applying a sequence
+                finished with precise instructions which, in turn, must be interpreted and carried out
+                until their conclusion following a very specific order.
+                The idea of algorithm is central to computer science. Some algorithms are faster than
+                others and most of the algorithms that have been discovered have made it possible to solve
+                problems that previously took an incredible amount of time. (example, finding the best
+                way to stow packages in a container, or find if very large numbers (100-digits and more) are prime.)
+            </p>
+        </div>
+    </div>
+
+    <div class="container justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-8 text-center">
+                <button type="button" class="btn btn-success btn-lg" onclick="start_Exercise_2('LVL1','1')">
+                    GO TO EXERCISE
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<br>
+
+
+
+</body>
+</html>

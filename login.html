@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+
+    <!-- miei -->
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+    <script src="JS/cookie_handler.js" ></script>
+    <script src="JS/JavaScript.js" language="JavaScript"></script>
+    <script src="JS/login_connection.js" ></script>
+
+</head>
+<body class="allinea_md" onload="before_load()">
+
+    <div class="container-fluid rounded my-3" id="login_div">
+        <div class="row justify-content-center" id="login_cont">
+
+            <div class="col-md-7 col-lg-6 col-sm-10 col-xs-10 col-xl-5">
+
+                <div class=" text-center my-3">
+                    <span class="h1">
+                        LearnFlow login
+                    </span>
+                </div>
+
+                <div class="text-center p-4" id="login_form">
+
+                    <span id="message4usr" class="mb-5" style="color:red;">  </span>
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="form_mail" class="form-label">Inserire email</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                <input type="email" class="form-control" id="form_mail" placeholder="email">
+                            </div>
+                            <span id = "message0" style="color:red"> </span>
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="form_pass" class="form-label" >Inserire password</label>
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <input type="password" class="form-control input-pas" id="form_pass" placeholder="password">
+                            </div>
+                            <span id = "message1" style="color:red"> </span>
+                        </div>
+                        <div class="mt-4 ml-5 mr-5" >
+                            <button type="button" class="btn btn-primary btn-block" onclick="validate_login()">Accedi</button>
+                        </div>
+                        <div class="my-2">
+
+                            <div class="d-flex justify-content-center links">
+                                <a href="#" >Password dimenticata?</a>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-center links row">
+                                <div class="col-6 text-right my-auto">
+                                    <span>
+                                        Non hai un account?
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-success btn-block" onclick="start_registration()">Registrati ora</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

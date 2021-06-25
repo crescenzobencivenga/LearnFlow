@@ -1,0 +1,32 @@
+{
+  "esercizio": "media di due numeri",
+  "array": [
+   "sum = sum / 2",
+   "sum = a + b",
+   "cane",
+   "sum>3",
+   "wewe",
+   "dsds"
+  ],
+  "ordineCorretto":[
+    1,
+    2,
+    3,
+    4,
+    5,
+    0
+    ],
+  "shapes":[
+    "par",
+    "rombo",
+    "rett",
+    "rett",
+    "rett",
+    "rett"
+    ],
+    "if":[
+      1,
+      5,
+      2
+    ]
+}

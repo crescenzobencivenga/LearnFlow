@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnFlow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+          crossorigin="anonymous">
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="../../../CSS/transalte_btn.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- miei -->
+    <link href="../../../CSS/stylesheet.css" rel="stylesheet">
+    <script src="../../../JS/JavaScript.js"></script>
+    <!-- altri -->
+    <script src="../../../JS/cookie_handler.js" ></script>
+    <script src="../../../JS/status_player.js"></script>
+    <script src="../../../JS/MainGame_connection.js"></script>
+    <script src="../../../JS/level_connection.js"></script>
+    <!-- Working exercise-->
+</head>
+
+<body>
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light ">
+
+    <div class="container-fluid">
+
+        <div class="justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="../../../img/logoLF-t.png" width="180" height="49" alt="">
+            </a>
+        </div>
+
+        <div class="nav-item mt-3">
+            <div id="google_translate_element">
+                <!--BUTTON FOR TRANSLATION-->
+            </div>
+        </div>
+
+        <div class="">
+            <button class="navbar-toggler dropdown"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#infox">
+                <i class="fas fa-user"></i>
+            </button>
+
+            <div class="collapse navbar-collapse text-right" id="infox">
+                <ul class="navbar-nav ml-auto my-auto">
+
+                    <li class="nav-item my-auto ml-4">
+                        <div class="m-auto">
+                            <h1 id="put_username" class="nav-link" style="color: #049dff;" translate="no"> </h1>
+                        </div>
+                    </li>
+
+                    <li>
+                        <hr>
+                    </li>
+
+                    <li class="nav-item my-auto ml-4">
+                        <div class=" row justify-content-center input-group-append mb-2">
+                            <h4 class="my-auto mr-2">Score </h4>
+                            <h2 class="my-auto" id="put_pnt2" style="color: #049dff;"> - </h2>
+                        </div>
+                    </li>
+
+                    <li class="nav-item my-auto ml-4">
+                        <div class="">
+                            <button type="button" class="btn btn-success btn-danger" onclick="exit_user_2()">
+                                Click to exit
+                            </button>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+
+<!-- contenuto -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 justify-content-center my-2 text-center">
+            <h1>
+                Compose the correct flowchart diagram
+            </h1>
+
+            <h4 id="put_title">
+    <!-- INSERISCI QUI IL TITOLO DELL'ESERCIZIO -->
+    <h1 onclick="prova()">sdjsjdjs</h1>
+
+            </h4>
+
+        </div>
+    </div>
+
+
+    <div id ="items" class="row justify-content-center my-2 text-center">
+<!-- INSERISCI IN ORDINE SCORRETTO GLI OGGETTI -->
+    </div>
+
+    <div id="todrop" class="row justify-content-center my-2 text-center"></div>
+    </div>
+
+    <!--RENDILE INVISIBILI A CONVENIENZA [se c'è o no un altro (tipo di) esercizio]-->
+    <div class="row p-2 justify-content-around">
+        <div class="col-4 m-2 ombra text-center container-fluid rounded">
+            <h4>Back</h4>
+        </div>
+        <div class="col-4 m-2 ombra text-center container-fluid rounded ">
+            <h4>Next</h4>
+        </div>
+    </div>
+
+</div>
+<style>    .droppable { width: 200px; height: 120px; padding: 0.5em; float: left; margin: 10px; background-color: gray; clear: both;}
+</style>
+
+<script src="js.js"></script>
+<script>
+    $( window ).on( "load", function() {
+        prova()
+    });
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
